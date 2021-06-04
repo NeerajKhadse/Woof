@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_rank"
+        android:icon="@drawable/ic_paw"
+        android:title="RANK" />
+
+    <item
+        android:id="@+id/nav_live"
+        android:icon="@drawable/ic_location"
+        android:title="LIVE" />
+
+    <item
+        android:id="@+id/nav_activity"
+        android:icon="@drawable/ic_signal_level"
+        android:title="ACTIVITY" />
+
+    <item
+        android:id="@+id/nav_mall"
+        android:icon="@drawable/ic_shopping_bag"
+        android:title="MALL" />
+
+    <item
+        android:id="@+id/nav_user"
+        android:icon="@drawable/ic_user"
+        android:title="USER" />
+</menu>

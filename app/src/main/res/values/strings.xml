@@ -1,0 +1,61 @@
+<resources>
+    <!-- fragment_rank -->
+    <string name="app_name">Woof</string>
+    <string name="breed_rank">BREED RANK</string>
+    <string name="overall_rank">OVERALL RANK</string>
+    <string name="dogname_rank">Zoe\'s Rank</string>
+    <string name="rank_number">9</string>
+    <string name="steps_text">STEPS</string>
+    <string name="distance_text">DISTANCE</string>
+    <string name="breed_text">BREED</string>
+    <string name="step_value">76.5k</string>
+    <string name="distance_value">10.5km</string>
+    <string name="breed_name">English Labrador</string>
+    <string name="steps">STEPS -</string>
+    <string name="distance">DISTANCE -</string>
+    <string name="breed">BREED -</string>
+
+    <!-- fragment_mall -->
+    <string name="services">SERVICES</string>
+    <string name="earlybird_text">Early Bird Sale</string>
+    <string name="sale_text">Grab deals before they\'re gone.</string>
+    <string name="pet_insurance">Pet Insurance</string>
+    <string name="connect_buttons">Connect Buttons</string>
+    <string name="tele_vet">Tele-vet Consultation</string>
+    <string name="microchip">Microchip</string>
+
+    <!-- fragment_user -->
+    <string name="profile_name">Zoeey</string>
+    <string name="profile_id">"@zoeeylabra"</string>
+    <string name="weight_text">WEIGHT</string>
+    <string name="weight_value">48 lbs</string>
+    <string name="age_text">AGE</string>
+    <string name="age_value">1.2 Years</string>
+    <string name="location_text">LOCATION</string>
+    <string name="location_value">Delhi, India</string>
+
+    <!-- fragment_live -->
+    <string name="day_form">TODAY</string>
+    <string name="date">MAY 14</string>
+    <string name="activity_desc">On a Walk</string>
+    <string name="time_live">TIME -</string>
+    <string name="time_value">5:13PM</string>
+    <string name="dist_live">DIST -</string>
+    <string name="dist_value">1.5KM</string>
+    <string name="live_card">LIVE</string>
+
+    <!-- fragment_activity -->
+    <string name="activity_text">ACTIVITY</string>
+    <string name="actstep_value">7.5k</string>
+    <string name="actdist_value">1.5km</string>
+    <string name="actdist">DIST</string>
+    <string name="actstep">STEPS</string>
+    <string name="actdailygoal">DAILY GOAL</string>
+    <string name="actdailygoal_value">11k</string>
+    <string name="dateweek">MAY 09 - 14</string>
+    <string name="dateweek_value">LAST 7 DAYS</string>
+    <string name="stepweek">STEPS</string>
+    <string name="stepweek_value">76.5k</string>
+    <string name="distweek">DISTANCE</string>   1`
+    <string name="distweek_value">10.5km</string>
+ </resources>

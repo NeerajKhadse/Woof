@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/woofbg"
+    android:weightSum="9"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_weight="1.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/textGrid"
+            android:fontFamily="@font/robotoslab_semibold"
+            android:text="@string/activity_text"
+            android:textSize="27sp"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1.8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/textDate"
+            android:fontFamily="@font/robotoslab_bold"
+            android:text="@string/date"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:gravity="top"
+            android:layout_marginLeft="26dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/textDay"
+            android:fontFamily="@font/robotoslab_extrabold"
+            android:text="@string/day_form"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:gravity="top"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:src="@drawable/ic_running_dog_silhouette"
+            android:layout_alignParentLeft="true"
+            android:layout_alignBottom="@+id/textDay"
+            android:layout_marginLeft="26dp"
+            android:layout_width="80dp"
+            android:layout_height="75dp" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="69dp"
+            android:indeterminateOnly="false"
+            android:progressDrawable="@drawable/circle"
+            android:progress="70" />
+
+        <TextView
+            android:fontFamily="@font/robotoslab_semibold"
+            android:gravity="center"
+            android:textColor="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/progress_bar"
+            android:layout_alignLeft="@+id/progress_bar"
+            android:layout_alignEnd="@+id/progress_bar"
+            android:layout_alignRight="@+id/progress_bar"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="54dp"
+            android:layout_marginLeft="54dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_marginBottom="85dp"
+            android:text="@string/steps_text"
+            android:textSize="12sp" />
+
+        <TextView
+            android:fontFamily="@font/robotoslab_semibold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/progress_bar"
+            android:layout_alignLeft="@+id/progress_bar"
+            android:layout_alignEnd="@+id/progress_bar"
+            android:layout_alignRight="@+id/progress_bar"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="54dp"
+            android:layout_marginLeft="54dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_marginBottom="65dp"
+            android:text="@string/actstep_value"
+            android:textSize="14sp" />
+
+        <TextView
+            android:fontFamily="@font/robotoslab_semibold"
+            android:gravity="center"
+            android:textColor="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/progress_bar"
+            android:layout_alignLeft="@+id/progress_bar"
+            android:layout_alignEnd="@+id/progress_bar"
+            android:layout_alignRight="@+id/progress_bar"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="54dp"
+            android:layout_marginLeft="54dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_marginBottom="39dp"
+            android:text="@string/actdist"
+            android:textSize="12sp" />
+
+        <TextView
+            android:fontFamily="@font/robotoslab_semibold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/progress_bar"
+            android:layout_alignLeft="@+id/progress_bar"
+            android:layout_alignEnd="@+id/progress_bar"
+            android:layout_alignRight="@+id/progress_bar"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="54dp"
+            android:layout_marginLeft="54dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/actdist_value"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/actDailyGoal"
+                android:text="@string/actdailygoal"
+                android:fontFamily="@font/robotoslab_regular"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/actDailyGoalValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/robotoslab_regular"
+                android:text="@string/actdailygoal_value"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button2"
+                android:fontFamily="@font/robotoslab_bold"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="26dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="CHANGE STEP GOAL" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_weight="0.7"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/dateWeek"
+            android:text="@string/dateweek"
+            android:fontFamily="@font/robotoslab_regular"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/dateWeekValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/robotoslab_regular"
+            android:text="@string/dateweek_value"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/stepWeek"
+            android:fontFamily="@font/robotoslab_regular"
+            android:layout_toRightOf="@+id/dateWeek"
+            android:textStyle="bold"
+            android:textColor="@color/gray"
+            android:layout_marginLeft="75dp"
+            android:layout_marginStart="75dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stepweek" />
+
+        <TextView
+            android:id="@+id/stepWeekValue"
+            android:fontFamily="@font/robotoslab_regular"
+            android:layout_toRightOf="@+id/dateWeekValue"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stepweek_value" />
+
+        <TextView
+            android:fontFamily="@font/robotoslab_regular"
+            android:layout_toRightOf="@+id/stepWeek"
+            android:textStyle="bold"
+            android:textColor="@color/gray"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/distweek" />
+
+        <TextView
+            android:fontFamily="@font/robotoslab_regular"
+            android:layout_toRightOf="@+id/stepWeekValue"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/distweek_value" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/yellow"
+        android:layout_marginTop="10dp"
+        android:layout_weight="4.3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:text="Bar Graph to be Placed."
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/woofbg"
+    android:weightSum="8"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_gravity="center_vertical|end"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/breedRank"
+            android:text="@string/breed_rank"
+            android:fontFamily="@font/robotoslab_semibold"
+            android:textSize="22sp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/overallRank"
+            android:text="@string/overall_rank"
+            android:fontFamily="@font/robotoslab_semibold"
+            android:textSize="22sp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/gray"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="0.7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+
+        <TextView
+            android:id="@+id/nameHeading"
+            android:text="@string/dogname_rank"
+            android:fontFamily="@font/robotoslab_regular"
+            android:layout_marginLeft="10dp"
+            android:textSize="36sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/rankNumber"
+            android:text="@string/rank_number"
+            android:fontFamily="@font/notosans_bold"
+            android:layout_marginRight="40dp"
+            android:textSize="36sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="0.3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+
+        <TextView
+            android:id="@+id/stepText"
+            android:text="@string/steps_text"
+            android:fontFamily="@font/robotoslab_regular"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/distanceText"
+            android:text="@string/distance_text"
+            android:fontFamily="@font/robotoslab_regular"
+            android:textSize="18sp"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/stepText"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+
+        <TextView
+            android:id="@+id/stepValue"
+            android:text="@string/step_value"
+            android:fontFamily="@font/robotoslab_regular"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/distanceValue"
+            android:text="@string/distance_value"
+            android:fontFamily="@font/robotoslab_regular"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/stepValue"
+            android:layout_marginLeft="52dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="0.3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+
+        <TextView
+            android:id="@+id/breedHeading"
+            android:text="@string/breed_text"
+            android:fontFamily="@font/robotoslab_regular"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="0.6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+
+        <TextView
+            android:id="@+id/breedName"
+            android:text="@string/breed_name"
+            android:fontFamily="@font/robotoslab_regular"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:columnCount="1"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:layout_weight="4.4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="16dp">
+
+        <!-- Row 1 -->
+        <!-- Column 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+
+            <RelativeLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/dalmatiancircle"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:text="@string/steps"
+                        android:fontFamily="@font/robotoslab_regular"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+
+                    <TextView
+                        android:text="@string/distance"
+                        android:fontFamily="@font/robotoslab_regular"
+                        android:textColor="@color/gray"
+                        android:layout_marginTop="32.5dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+
+                    <TextView
+                        android:text="@string/breed"
+                        android:fontFamily="@font/robotoslab_regular"
+                        android:textColor="@color/gray"
+                        android:layout_marginTop="65dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 2 -->
+        <!-- Column 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+
+            <RelativeLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/dog8facecircle"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:text="@string/steps"
+                        android:fontFamily="@font/robotoslab_regular"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="32.5dp" />
+
+                    <TextView
+                        android:text="@string/distance"
+                        android:fontFamily="@font/robotoslab_regular"
+                        android:textColor="@color/gray"
+                        android:layout_marginTop="32.5dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="32.5dp" />
+
+                    <TextView
+                        android:text="@string/breed"
+                        android:fontFamily="@font/robotoslab_regular"
+                        android:textColor="@color/gray"
+                        android:layout_marginTop="65dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="32.5dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 3 -->
+        <!-- Column 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+
+            <RelativeLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/dog23facecircle"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:text="@string/steps"
+                        android:fontFamily="@font/robotoslab_regular"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="32.5dp" />
+
+                    <TextView
+                        android:text="@string/distance"
+                        android:fontFamily="@font/robotoslab_regular"
+                        android:textColor="@color/gray"
+                        android:layout_marginTop="32.5dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="32.5dp" />
+
+                    <TextView
+                        android:text="@string/breed"
+                        android:fontFamily="@font/robotoslab_regular"
+                        android:textColor="@color/gray"
+                        android:layout_marginTop="65dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="32.5dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+
+</LinearLayout>
