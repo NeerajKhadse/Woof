@@ -298,19 +298,17 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:background="@color/yellow"
         android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:layout_weight="4.3"
         android:layout_width="match_parent"
         android:layout_height="0dp">
 
-        <TextView
-            android:text="Bar Graph to be Placed."
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:layout_centerInParent="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/fragment_verticalbarchart_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
     </RelativeLayout>
 
